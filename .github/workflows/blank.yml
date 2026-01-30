@@ -37,14 +37,17 @@ jobs:
       if: matrix.name == 'Emscripten'
       run: |
         sudo apt update -y
-        sudo apt install -y python3 python3-pip ninja-build
+        sudo apt install -y python3 python3-pip ninja-build nodejs npm
         # 安装emsdk
         git clone https://github.com/emscripten-core/emsdk.git
         cd emsdk
         ./emsdk install latest
         ./emsdk activate latest
+        source ./emsdk_env.sh
         echo "EMSDK=$(pwd)" >> $GITHUB_ENV
         echo "PATH=$(pwd)/upstream/emscripten:$(pwd):$PATH" >> $GITHUB_ENV
+        # 设置 Emscripten 环境变量
+        echo "EMSCRIPTEN=$(pwd)/upstream/emscripten" >> $GITHUB_ENV
 
     - name: Prepare MacOS
       if: matrix.name == 'MacOS'
@@ -66,9 +69,20 @@ jobs:
     - name: Config cmake (Emscripten)
       if: matrix.name == 'Emscripten'
       working-directory: ./
+      env:
+        EMSDK: ${{ env.EMSDK }}
       run: |
         source $EMSDK/emsdk_env.sh
-        ${{ matrix.cmake-path }}cmake --preset=CI-Emscripten
+        # 创建 Emscripten 构建目录并配置
+        mkdir -p emcmake-build
+        cd emcmake-build
+        emcmake ${{ matrix.cmake-path }}cmake .. \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_EXECUTABLE_SUFFIX=.html \
+          -DCMAKE_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake
+        # 检查生成的 CMakeCache 是否正确设置了 Emscripten
+        echo "=== 检查 CMakeCache ==="
+        grep -i "emscripten" CMakeCache.txt || true
 
     - name: Debug Windows
       if: matrix.name == 'Windows'
@@ -100,6 +114,9 @@ jobs:
         ls -la
         echo "=== emcmake-build 目录 ==="
         ls -la emcmake-build/ 2>/dev/null || echo "emcmake-build 目录不存在"
+        echo "=== 检查 Emscripten 工具链 ==="
+        which emcc || echo "emcc not found"
+        which emcmake || echo "emcmake not found"
 
     - name: Debug Android
       working-directory: ./
@@ -119,9 +136,20 @@ jobs:
     - name: Build under Emscripten
       if: matrix.name == 'Emscripten'
       working-directory: ./
+      env:
+        EMSDK: ${{ env.EMSDK }}
       run: |
         source $EMSDK/emsdk_env.sh
-        ${{ matrix.cmake-path }}cmake --build emcmake-build
+        echo "=== 使用 Emscripten 编译 ==="
+        echo "EMSDK 路径: $EMSDK"
+        echo "emcc 版本:"
+        emcc --version || echo "emcc 不可用"
+        # 使用 emmake 进行构建
+        cd emcmake-build
+        emmake ${{ matrix.cmake-path }}cmake --build . --parallel
+        # 检查生成的文件
+        echo "=== 生成的 Web 文件 ==="
+        ls -la bin/*.html 2>/dev/null || ls -la bin/*.js 2>/dev/null || ls -la bin/*.wasm 2>/dev/null || echo "未找到 Web 文件"
 
     - name: Upload build logs on failure (PC)
       if: ${{ failure() && (matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS') }}
@@ -157,14 +185,17 @@ jobs:
           ./cmake-build/bin
         retention-days: 7
 
-    # 添加Emscripten上传步骤
+    # 添加Emscripten上传步骤 - 专门上传Web文件
     - name: Upload Emscripten artifact
       if: matrix.name == 'Emscripten'
       uses: actions/upload-artifact@v4
       with:
-        name: livnet-${{ matrix.name }}-${{ github.run_id }}
+        name: livnet-web-${{ github.run_id }}
         path: |
-          ./emcmake-build/bin
+          ./emcmake-build/bin/*.html
+          ./emcmake-build/bin/*.js
+          ./emcmake-build/bin/*.wasm
+          ./emcmake-build/bin/*.data
         retention-days: 7
 
     - name: Precompile schema parser
