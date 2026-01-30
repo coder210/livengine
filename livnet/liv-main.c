@@ -1,85 +1,68 @@
-#define SDL_MAIN_USE_CALLBACKS 1
-#include <stdbool.h>
+/*
+ * This example code creates an SDL window and renderer, and then clears the
+ * window to a different color every frame, so you'll effectively get a window
+ * that's smoothly fading between colors.
+ *
+ * This code is public domain. Feel free to use it for any purpose!
+ */
+
+#define SDL_MAIN_USE_CALLBACKS 1  /* use the callbacks instead of main() */
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include "./external/lua/lua.h"
-#include "./external/lua/lualib.h"
-#include "./external/lua/lauxlib.h"
-#include "liv.h"
-#include "liv-sys.h"
-#include "liv-config.h"
-#include "liv-log.h"
-#include "liv-physics.h"
 
-static void liv_print_title()
+/* We will use this renderer to draw into this window every frame. */
+static SDL_Window *window = NULL;
+static SDL_Renderer *renderer = NULL;
+
+/* This function runs once at startup. */
+SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
 {
-        liv_log_info("-------------------------------------------------------");
-        liv_log_info("  ##     00  ##       ##  #######   #######  ########  ");
-        liv_log_info("  ##     ##   ##     ##   ##   ##   #           ##     ");
-        liv_log_info("  ##     ##    ##   ##    ##   ##   ######      ##     ");
-        liv_log_info("  ##     ##     ## ##     ##   ##   #           ##     ");
-        liv_log_info("  #####  ##      ###      ##   ##   #######     ##     ");
-        liv_log_info("-------------------------------------------------------");
+    SDL_SetAppMetadata("Example Renderer Clear", "1.0", "com.example.renderer-clear");
+
+    if (!SDL_Init(SDL_INIT_VIDEO)) {
+        SDL_Log("Couldn't initialize SDL: %s", SDL_GetError());
+        return SDL_APP_FAILURE;
+    }
+
+    if (!SDL_CreateWindowAndRenderer("examples/renderer/clear", 640, 480, 0, &window, &renderer)) {
+        SDL_Log("Couldn't create window/renderer: %s", SDL_GetError());
+        return SDL_APP_FAILURE;
+    }
+
+    return SDL_APP_CONTINUE;  /* carry on with the program! */
 }
 
-SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
+/* This function runs when a new event (mouse input, keypresses, etc) occurs. */
+SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
 {
-        app_p app;
-        const char* config_file;
-        char* file_data;
-        size_t data_size;
-
-        if (!SDL_Init(SDL_INIT_EVENTS)) {
-                liv_log_error("Couldn't initialize SDL: %s", SDL_GetError());
-                return SDL_APP_FAILURE;
-        }
-
-        liv_print_title();
-        liv_log_debug(SDL_GetBasePath());
-        //config_file = argc > 1 ? argv[1] : "scripts/example/config4.lua";
-        config_file = argc > 1 ? argv[1] : "scripts/adventure/client_config.lua";
-        //config_file = argc > 1 ? argv[1] : "scripts/adventure/server_config.lua";
-        file_data = SDL_LoadFile(config_file, &data_size);
-        if (!file_data) {
-                return SDL_APP_FAILURE;
-        }
-	SDL_Log("%s", "=======================2");
-        app = liv_create(file_data);
-	SDL_Log("%s", "=======================3");
-        *appstate = app;
-        SDL_free(file_data);
-        return SDL_APP_CONTINUE;
+    if (event->type == SDL_EVENT_QUIT) {
+        return SDL_APP_SUCCESS;  /* end the program, reporting success to the OS. */
+    }
+    return SDL_APP_CONTINUE;  /* carry on with the program! */
 }
 
-SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event)
+/* This function runs once per frame, and is the heart of the program. */
+SDL_AppResult SDL_AppIterate(void *appstate)
 {
-        app_p app;
-        app = (app_p)appstate;
-        liv_event(app, event);
-	return SDL_APP_CONTINUE;
+    const double now = ((double)SDL_GetTicks()) / 1000.0;  /* convert from milliseconds to seconds. */
+    /* choose the color for the frame we will draw. The sine wave trick makes it fade between colors smoothly. */
+    const float red = (float) (0.5 + 0.5 * SDL_sin(now));
+    const float green = (float) (0.5 + 0.5 * SDL_sin(now + SDL_PI_D * 2 / 3));
+    const float blue = (float) (0.5 + 0.5 * SDL_sin(now + SDL_PI_D * 4 / 3));
+    SDL_SetRenderDrawColorFloat(renderer, red, green, blue, SDL_ALPHA_OPAQUE_FLOAT);  /* new color, full alpha. */
+
+    /* clear the window to the draw color. */
+    SDL_RenderClear(renderer);
+
+    /* put the newly-cleared rendering on the screen. */
+    SDL_RenderPresent(renderer);
+
+    return SDL_APP_CONTINUE;  /* carry on with the program! */
 }
 
-SDL_AppResult SDL_AppIterate(void* appstate)
+/* This function runs once at shutdown. */
+void SDL_AppQuit(void *appstate, SDL_AppResult result)
 {
-        app_p app;
-        app = (app_p)appstate;
-        liv_update(app);
-        if (liv_running(app)) {
-                return SDL_APP_CONTINUE;
-        }
-        else {
-                return SDL_APP_SUCCESS;
-        }
+    /* SDL will clean up the window/renderer for us. */
 }
-
-void SDL_AppQuit(void* appstate, SDL_AppResult result)
-{
-        app_p app;
-        app = (app_p)appstate;
-        if (result == SDL_APP_SUCCESS) {
-                liv_destroy(app);
-        }
-        liv_log_debug("good bye.");
-}
-
 

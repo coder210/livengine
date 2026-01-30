@@ -1,0 +1,748 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "3rd/SDL",
+					"jsonFile" : "directory-3rd.SDL-Debug-d7cdcdeb898e98435954.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/SDL",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "livnet",
+					"jsonFile" : "directory-livnet-Debug-17c4eeaac380a0277ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "livnet",
+					"targetIndexes" : 
+					[
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "livnet",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-4ddcb7f2886213ae7d82.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@390882f457bfc01a1809",
+					"jsonFile" : "target-ALL_BUILD-Debug-5ac504be5cdc276079fb.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AsposeXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AsposeXlsTest-Debug-5d6f3e14b0996dd8177d.json",
+					"name" : "AsposeXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Livlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Livlib-Debug-b132dde22bb9513704a9.json",
+					"name" : "Livlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3-shared::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL3-shared-Debug-b16bbf8a0cc19f3646f5.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL_uclibc::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL_uclibc-Debug-cadfc582f5b8e3eb2e4b.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SpireXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpireXlsTest-Debug-520590501ae619376c92.json",
+					"name" : "SpireXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test1-Debug-6c1354762ec9caa0f7d9.json",
+					"name" : "Test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test2-Debug-6d0a824d4a468079fd2b.json",
+					"name" : "Test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-e513c53591ea33a7d7c1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "livnet::@7ab0c1ddee0e43606600",
+					"jsonFile" : "target-livnet-Debug-ebed34ad463c50445626.json",
+					"name" : "livnet",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "3rd/SDL",
+					"jsonFile" : "directory-3rd.SDL-Release-d7cdcdeb898e98435954.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/SDL",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "livnet",
+					"jsonFile" : "directory-livnet-Release-17c4eeaac380a0277ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "livnet",
+					"targetIndexes" : 
+					[
+						10
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "livnet",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-4ddcb7f2886213ae7d82.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@390882f457bfc01a1809",
+					"jsonFile" : "target-ALL_BUILD-Release-5ac504be5cdc276079fb.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AsposeXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AsposeXlsTest-Release-57822e233141061e6038.json",
+					"name" : "AsposeXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Livlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Livlib-Release-9af31e71836272880aec.json",
+					"name" : "Livlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3-shared::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL3-shared-Release-6a80f56e57d321acaf6d.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL_uclibc::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL_uclibc-Release-5a07ce61cf67e4c605a4.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SpireXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpireXlsTest-Release-9fa43a04ac128a17ab24.json",
+					"name" : "SpireXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test1-Release-0dd754b9f096a973e828.json",
+					"name" : "Test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test2-Release-f2fae4420787ff760056.json",
+					"name" : "Test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-e513c53591ea33a7d7c1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "livnet::@7ab0c1ddee0e43606600",
+					"jsonFile" : "target-livnet-Release-7439d7fd8fafc5f57970.json",
+					"name" : "livnet",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "3rd/SDL",
+					"jsonFile" : "directory-3rd.SDL-MinSizeRel-d7cdcdeb898e98435954.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/SDL",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "livnet",
+					"jsonFile" : "directory-livnet-MinSizeRel-17c4eeaac380a0277ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "livnet",
+					"targetIndexes" : 
+					[
+						10
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "livnet",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-4ddcb7f2886213ae7d82.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@390882f457bfc01a1809",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-5ac504be5cdc276079fb.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AsposeXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AsposeXlsTest-MinSizeRel-54967c55609eb321c65b.json",
+					"name" : "AsposeXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Livlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Livlib-MinSizeRel-395824875f03b114125d.json",
+					"name" : "Livlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3-shared::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL3-shared-MinSizeRel-381f742583d2c5d8cd40.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL_uclibc::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL_uclibc-MinSizeRel-4b13957dfe4c6fbc92fe.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SpireXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpireXlsTest-MinSizeRel-9df74bb3281bd4ac351a.json",
+					"name" : "SpireXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test1-MinSizeRel-dd1fa7ce789e3df3d744.json",
+					"name" : "Test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test2-MinSizeRel-509eaac29b3f88ea7e6e.json",
+					"name" : "Test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-e513c53591ea33a7d7c1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "livnet::@7ab0c1ddee0e43606600",
+					"jsonFile" : "target-livnet-MinSizeRel-f1517bee0c5aa6941427.json",
+					"name" : "livnet",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "3rd/SDL",
+					"jsonFile" : "directory-3rd.SDL-RelWithDebInfo-d7cdcdeb898e98435954.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/SDL",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "livnet",
+					"jsonFile" : "directory-livnet-RelWithDebInfo-17c4eeaac380a0277ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "livnet",
+					"targetIndexes" : 
+					[
+						10
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "livnet",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-4ddcb7f2886213ae7d82.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@390882f457bfc01a1809",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-5ac504be5cdc276079fb.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AsposeXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AsposeXlsTest-RelWithDebInfo-2137bfc5c5877ba81221.json",
+					"name" : "AsposeXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Livlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Livlib-RelWithDebInfo-1f046e3d8cadc9473941.json",
+					"name" : "Livlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3-shared::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL3-shared-RelWithDebInfo-df248b26ff5b407911d3.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL_uclibc::@390882f457bfc01a1809",
+					"jsonFile" : "target-SDL_uclibc-RelWithDebInfo-6111a621d27c87fca126.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SpireXlsTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpireXlsTest-RelWithDebInfo-27104313722083e974de.json",
+					"name" : "SpireXlsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test1-RelWithDebInfo-04abd93b4d8673ac2580.json",
+					"name" : "Test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test2-RelWithDebInfo-07dff378d9e199add684.json",
+					"name" : "Test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-e513c53591ea33a7d7c1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "livnet::@7ab0c1ddee0e43606600",
+					"jsonFile" : "target-livnet-RelWithDebInfo-b68308c2b99443e67a12.json",
+					"name" : "livnet",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/music/livengine/cmake-build",
+		"source" : "D:/music/livengine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
