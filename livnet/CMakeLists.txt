@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 set(PROJECT_NAME livnet)
 
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
 if(ANDROID)
     # Android环境
     message(STATUS "Building for Android")

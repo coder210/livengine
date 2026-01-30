@@ -1,0 +1,428 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/CMakeFiles/3.28.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/CMakeFiles/3.28.3/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/CMakeFiles/3.28.3/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/CMakeFiles/3.28.3/CMakeCSharpCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeCSharpInformation.cmake"
+		},
+		{
+			"path" : "3rd/SDL/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckLanguage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCSourceRuns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceRuns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckStructHasMember.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/macros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CheckLinkerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdlchecks.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdlcompilers.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdlcpu.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdlmanpages.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdlplatform.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/sdltargets.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/GetGitRevisionDescription.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/3rdparty.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/PreseedMSVCCache.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/PreseedEmscriptenCache.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/FindLibUSB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "3rd/SDL/include/build_config/SDL_build_config.h.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindGit.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : ".git/HEAD"
+		},
+		{
+			"path" : "3rd/SDL/cmake/GetGitRevisionDescription.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/3rd/SDL/CMakeFiles/git-data/grabRef.cmake"
+		},
+		{
+			"path" : ".git/refs/heads/main"
+		},
+		{
+			"path" : "3rd/SDL/include/build_config/SDL_revision.h.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"path" : "3rd/SDL/cmake/SDL3Config.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CMake/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build/3rd/SDL/CMakeFiles/SDL_build_config.h.intermediate"
+		},
+		{
+			"path" : "livnet/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "E:/c++/livengine/cmake-build",
+		"source" : "E:/c++/livengine"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

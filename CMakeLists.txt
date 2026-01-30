@@ -1,12 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 
 set(PROJECT_NAME livnet)
+
 project(${PROJECT_NAME} LANGUAGES C VERSION "3.2.6")
 
 #本工程支持的C版本
-set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_EXTENSIONS OFF)
-set(CMAKE_C_STANDARD_REQUIRED ON)
 set(ENABLE_LIVNET_CLASSIC_MONO OFF)
 
 # 可选：设置输出目录

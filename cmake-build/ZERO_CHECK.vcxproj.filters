@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\music\livengine\cmake-build\CMakeFiles\782ab3c037a7c9ddbb6bc0c6b659c63a\generate.stamp.rule">
+    <CustomBuild Include="E:\c++\livengine\cmake-build\CMakeFiles\d27e43ed37edfb5bc24e8382792fad02\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{701AB6D6-3D6F-3CE5-A884-29DAFEFD019A}</UniqueIdentifier>
+      <UniqueIdentifier>{EA1EBBBE-5A5E-3060-BC0A-DA58BF9E88F7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

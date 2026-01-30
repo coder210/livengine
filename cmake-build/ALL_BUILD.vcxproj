@@ -25,9 +25,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{19B311E6-9255-33F5-BA85-98D473C204C5}</ProjectGuid>
+    <ProjectGuid>{65A8BB23-205C-3764-B73C-B254CF5B7A20}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\music\livengine\CMakeLists.txt">
+    <CustomBuild Include="E:\c++\livengine\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/music/livengine/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/c++/livengine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCSharpInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCSharpCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\music\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCSharpInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCSharpCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\c++\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/music/livengine/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/c++/livengine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCSharpInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCSharpCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\music\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCSharpInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCSharpCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\c++\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/music/livengine/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/c++/livengine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCSharpInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCSharpCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\music\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCSharpInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCSharpCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\c++\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/music/livengine/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/c++/livengine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,56 +159,55 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCSharpInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeCSharpCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;D:\music\livengine\cmake-build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\music\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCSharpInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeCSharpCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\c++\livengine\cmake-build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\c++\livengine\cmake-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\music\livengine\cmake-build\ZERO_CHECK.vcxproj">
-      <Project>{9603400E-807B-3781-B967-1F32574E84A9}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{A1072C71-2EE6-33FA-AFD9-EDCCFDC99BF3}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\AsposeXlsTest.csproj">
-      <Project>{63CF7856-8701-3A98-93A4-10DCFF4AC7C1}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\AsposeXlsTest.csproj">
+      <Project>{5EC76284-638E-390F-8A01-B572E4768B3A}</Project>
       <Name>AsposeXlsTest</Name>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\Livlib.csproj">
-      <Project>{CC668172-929A-3138-B2BA-86036D3C9274}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\Livlib.csproj">
+      <Project>{DBF655D7-A263-3F5A-81BC-BC420F00B0D8}</Project>
       <Name>Livlib</Name>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\3rd\SDL\SDL3-shared.vcxproj">
-      <Project>{A610F9C6-A711-3CDA-9A0E-80D5719C9D17}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\3rd\SDL\SDL3-shared.vcxproj">
+      <Project>{7D864591-2B9B-3880-A494-12A58BFF8DD2}</Project>
       <Name>SDL3-shared</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\3rd\SDL\SDL_uclibc.vcxproj">
-      <Project>{37C43610-8549-3B76-926E-288389E9672D}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\3rd\SDL\SDL_uclibc.vcxproj">
+      <Project>{29EB1041-00FD-3AA0-8C7E-4FBDEF31F9C4}</Project>
       <Name>SDL_uclibc</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\SpireXlsTest.csproj">
-      <Project>{55ED3076-FC71-32D5-9DD8-2224BA50CB41}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\SpireXlsTest.csproj">
+      <Project>{45F42971-6CB4-3A13-AE0E-799FD0C557F9}</Project>
       <Name>SpireXlsTest</Name>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\Test1.csproj">
-      <Project>{6D73CD7F-4BE5-3A38-B8CD-72FDFAEA1DB2}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\Test1.csproj">
+      <Project>{E60A0599-8E3D-3DFD-B273-1415CC73759C}</Project>
       <Name>Test1</Name>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\Test2.csproj">
-      <Project>{5D606153-B169-3A9F-A67C-7AF5D11440CA}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\Test2.csproj">
+      <Project>{39C6D7A0-985C-36C6-9A80-22D52C147EF8}</Project>
       <Name>Test2</Name>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\livnet\livnet.vcxproj">
-      <Project>{95D12E9A-010F-36D8-8218-949EFA8A0B2C}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\livnet\livnet.vcxproj">
+      <Project>{16D15E9E-BC3C-361E-BD07-31BC0046AF27}</Project>
       <Name>livnet</Name>
     </ProjectReference>
   </ItemGroup>

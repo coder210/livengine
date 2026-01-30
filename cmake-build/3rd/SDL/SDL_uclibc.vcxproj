@@ -22,9 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{37C43610-8549-3B76-926E-288389E9672D}</ProjectGuid>
+    <ProjectGuid>{29EB1041-00FD-3AA0-8C7E-4FBDEF31F9C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>SDL_uclibc</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\music\livengine\cmake-build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\c++\livengine\cmake-build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDL_uclibc.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDL_uclibc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\music\livengine\cmake-build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\c++\livengine\cmake-build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL_uclibc.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL_uclibc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\music\livengine\cmake-build\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\c++\livengine\cmake-build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDL_uclibc.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDL_uclibc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\music\livengine\cmake-build\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\c++\livengine\cmake-build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDL_uclibc.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDL_uclibc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -86,11 +86,9 @@
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USING_GENERATED_CONFIG_H;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -99,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,18 +113,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-release\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -137,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-release\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-release\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -153,18 +148,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -175,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -191,19 +183,16 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -212,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;D:\music\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -227,11 +216,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\music\livengine\3rd\SDL\CMakeLists.txt">
+    <CustomBuild Include="E:\c++\livengine\3rd\SDL\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/music/livengine/3rd/SDL/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/c++/livengine/3rd/SDL/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -239,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;D:\music\livengine\.git\HEAD;D:\music\livengine\.git\refs\heads\main;D:\music\livengine\3rd\SDL\cmake\3rdparty.cmake;D:\music\livengine\3rd\SDL\cmake\FindLibUSB.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;D:\music\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;D:\music\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;D:\music\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;D:\music\livengine\3rd\SDL\cmake\macros.cmake;D:\music\livengine\3rd\SDL\cmake\sdlchecks.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcompilers.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcpu.cmake;D:\music\livengine\3rd\SDL\cmake\sdlmanpages.cmake;D:\music\livengine\3rd\SDL\cmake\sdlplatform.cmake;D:\music\livengine\3rd\SDL\cmake\sdltargets.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckStructHasMember.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.28\Modules\FindGit.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.28\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\c++\livengine\.git\HEAD;E:\c++\livengine\.git\refs\heads\main;E:\c++\livengine\3rd\SDL\cmake\3rdparty.cmake;E:\c++\livengine\3rd\SDL\cmake\FindLibUSB.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;E:\c++\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;E:\c++\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;E:\c++\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;E:\c++\livengine\3rd\SDL\cmake\macros.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlchecks.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcompilers.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcpu.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlmanpages.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlplatform.cmake;E:\c++\livengine\3rd\SDL\cmake\sdltargets.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/music/livengine/3rd/SDL/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/c++/livengine/3rd/SDL/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -252,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;D:\music\livengine\.git\HEAD;D:\music\livengine\.git\refs\heads\main;D:\music\livengine\3rd\SDL\cmake\3rdparty.cmake;D:\music\livengine\3rd\SDL\cmake\FindLibUSB.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;D:\music\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;D:\music\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;D:\music\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;D:\music\livengine\3rd\SDL\cmake\macros.cmake;D:\music\livengine\3rd\SDL\cmake\sdlchecks.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcompilers.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcpu.cmake;D:\music\livengine\3rd\SDL\cmake\sdlmanpages.cmake;D:\music\livengine\3rd\SDL\cmake\sdlplatform.cmake;D:\music\livengine\3rd\SDL\cmake\sdltargets.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckStructHasMember.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.28\Modules\FindGit.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.28\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\c++\livengine\.git\HEAD;E:\c++\livengine\.git\refs\heads\main;E:\c++\livengine\3rd\SDL\cmake\3rdparty.cmake;E:\c++\livengine\3rd\SDL\cmake\FindLibUSB.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;E:\c++\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;E:\c++\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;E:\c++\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;E:\c++\livengine\3rd\SDL\cmake\macros.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlchecks.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcompilers.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcpu.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlmanpages.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlplatform.cmake;E:\c++\livengine\3rd\SDL\cmake\sdltargets.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/music/livengine/3rd/SDL/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/c++/livengine/3rd/SDL/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -265,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;D:\music\livengine\.git\HEAD;D:\music\livengine\.git\refs\heads\main;D:\music\livengine\3rd\SDL\cmake\3rdparty.cmake;D:\music\livengine\3rd\SDL\cmake\FindLibUSB.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;D:\music\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;D:\music\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;D:\music\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;D:\music\livengine\3rd\SDL\cmake\macros.cmake;D:\music\livengine\3rd\SDL\cmake\sdlchecks.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcompilers.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcpu.cmake;D:\music\livengine\3rd\SDL\cmake\sdlmanpages.cmake;D:\music\livengine\3rd\SDL\cmake\sdlplatform.cmake;D:\music\livengine\3rd\SDL\cmake\sdltargets.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckStructHasMember.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.28\Modules\FindGit.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.28\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\c++\livengine\.git\HEAD;E:\c++\livengine\.git\refs\heads\main;E:\c++\livengine\3rd\SDL\cmake\3rdparty.cmake;E:\c++\livengine\3rd\SDL\cmake\FindLibUSB.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;E:\c++\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;E:\c++\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;E:\c++\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;E:\c++\livengine\3rd\SDL\cmake\macros.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlchecks.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcompilers.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcpu.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlmanpages.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlplatform.cmake;E:\c++\livengine\3rd\SDL\cmake\sdltargets.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/music/livengine/3rd/SDL/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/c++/livengine/3rd/SDL/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/3rd/SDL/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -278,42 +267,41 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;D:\music\livengine\.git\HEAD;D:\music\livengine\.git\refs\heads\main;D:\music\livengine\3rd\SDL\cmake\3rdparty.cmake;D:\music\livengine\3rd\SDL\cmake\FindLibUSB.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;D:\music\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;D:\music\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;D:\music\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;D:\music\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;D:\music\livengine\3rd\SDL\cmake\macros.cmake;D:\music\livengine\3rd\SDL\cmake\sdlchecks.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcompilers.cmake;D:\music\livengine\3rd\SDL\cmake\sdlcpu.cmake;D:\music\livengine\3rd\SDL\cmake\sdlmanpages.cmake;D:\music\livengine\3rd\SDL\cmake\sdlplatform.cmake;D:\music\livengine\3rd\SDL\cmake\sdltargets.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;D:\music\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\music\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckCXXSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\CheckStructHasMember.cmake;D:\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.28\Modules\FindGit.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.28\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.28\Modules\Internal\CheckSourceRuns.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\c++\livengine\.git\HEAD;E:\c++\livengine\.git\refs\heads\main;E:\c++\livengine\3rd\SDL\cmake\3rdparty.cmake;E:\c++\livengine\3rd\SDL\cmake\FindLibUSB.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake;E:\c++\livengine\3rd\SDL\cmake\GetGitRevisionDescription.cmake.in;E:\c++\livengine\3rd\SDL\cmake\PreseedEmscriptenCache.cmake;E:\c++\livengine\3rd\SDL\cmake\PreseedMSVCCache.cmake;E:\c++\livengine\3rd\SDL\cmake\SDL3Config.cmake.in;E:\c++\livengine\3rd\SDL\cmake\macros.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlchecks.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcompilers.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlcpu.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlmanpages.cmake;E:\c++\livengine\3rd\SDL\cmake\sdlplatform.cmake;E:\c++\livengine\3rd\SDL\cmake\sdltargets.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_build_config.h.cmake;E:\c++\livengine\3rd\SDL\include\build_config\SDL_revision.h.cmake;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\SDL_build_config.h.intermediate;E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\git-data\grabRef.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\c++\livengine\cmake-build\3rd\SDL\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_atan2.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_exp.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_fmod.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_log.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_log10.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_pow.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_rem_pio2.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\e_sqrt.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\k_cos.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\k_rem_pio2.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\k_sin.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\k_tan.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_atan.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_copysign.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_cos.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_fabs.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_floor.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_isinf.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_isinff.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_isnan.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_isnanf.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_modf.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_scalbn.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_sin.c" />
-    <ClCompile Include="D:\music\livengine\3rd\SDL\src\libm\s_tan.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_atan2.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_exp.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_fmod.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_log.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_log10.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_pow.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_rem_pio2.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\e_sqrt.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\k_cos.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\k_rem_pio2.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\k_sin.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\k_tan.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_atan.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_copysign.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_cos.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_fabs.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_floor.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_isinf.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_isinff.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_isnan.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_isnanf.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_modf.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_scalbn.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_sin.c" />
+    <ClCompile Include="E:\c++\livengine\3rd\SDL\src\libm\s_tan.c" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\music\livengine\cmake-build\ZERO_CHECK.vcxproj">
-      <Project>{9603400E-807B-3781-B967-1F32574E84A9}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{A1072C71-2EE6-33FA-AFD9-EDCCFDC99BF3}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

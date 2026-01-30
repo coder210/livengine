@@ -22,9 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{95D12E9A-010F-36D8-8218-949EFA8A0B2C}</ProjectGuid>
+    <ProjectGuid>{16D15E9E-BC3C-361E-BD07-31BC0046AF27}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>livnet</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\music\livengine\cmake-build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\c++\livengine\cmake-build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">livnet.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">livnet</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\music\livengine\cmake-build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\c++\livengine\cmake-build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">livnet.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">livnet</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\music\livengine\cmake-build\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\c++\livengine\cmake-build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">livnet.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">livnet</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\music\livengine\cmake-build\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\c++\livengine\cmake-build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">livnet.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">livnet</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,18 +86,16 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -105,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,12 +115,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>..\bin\Debug\SDL3.lib;ws2_32.lib;Bcrypt.lib;Winmm.lib;setupapi.lib;Imm32.lib;Version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/music/livengine/cmake-build/bin;D:/music/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/c++/livengine/cmake-build/bin;E:/c++/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/music/livengine/cmake-build/bin/Debug/livnet.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/music/livengine/cmake-build/bin/Debug/livnet.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/c++/livengine/cmake-build/bin/Debug/livnet.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/c++/livengine/cmake-build/bin/Debug/livnet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -131,17 +129,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -151,10 +146,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -163,12 +158,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>..\bin\Release\SDL3.lib;ws2_32.lib;Bcrypt.lib;Winmm.lib;setupapi.lib;Imm32.lib;Version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/music/livengine/cmake-build/bin;D:/music/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/c++/livengine/cmake-build/bin;E:/c++/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/music/livengine/cmake-build/bin/Release/livnet.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/music/livengine/cmake-build/bin/Release/livnet.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/c++/livengine/cmake-build/bin/Release/livnet.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/c++/livengine/cmake-build/bin/Release/livnet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -177,17 +172,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -197,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -209,12 +201,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>..\bin\MinSizeRel\SDL3.lib;ws2_32.lib;Bcrypt.lib;Winmm.lib;setupapi.lib;Imm32.lib;Version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/music/livengine/cmake-build/bin;D:/music/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/c++/livengine/cmake-build/bin;E:/c++/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/music/livengine/cmake-build/bin/MinSizeRel/livnet.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/music/livengine/cmake-build/bin/MinSizeRel/livnet.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/c++/livengine/cmake-build/bin/MinSizeRel/livnet.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/c++/livengine/cmake-build/bin/MinSizeRel/livnet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -223,18 +215,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -242,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\music\livengine\3rd\SDL\include;D:\music\livengine\livnet\3rd\SDL\include;D:\music\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\livnet\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -254,12 +243,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>..\bin\RelWithDebInfo\SDL3.lib;ws2_32.lib;Bcrypt.lib;Winmm.lib;setupapi.lib;Imm32.lib;Version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/music/livengine/cmake-build/bin;D:/music/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/c++/livengine/cmake-build/bin;E:/c++/livengine/cmake-build/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/music/livengine/cmake-build/bin/RelWithDebInfo/livnet.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/music/livengine/cmake-build/bin/RelWithDebInfo/livnet.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/c++/livengine/cmake-build/bin/RelWithDebInfo/livnet.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/c++/livengine/cmake-build/bin/RelWithDebInfo/livnet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -267,11 +256,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\music\livengine\livnet\CMakeLists.txt">
+    <CustomBuild Include="E:\c++\livengine\livnet\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/music/livengine/livnet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/c++/livengine/livnet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -280,11 +269,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\music\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\c++\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/music/livengine/livnet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/c++/livengine/livnet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -293,11 +282,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\music\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\c++\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/music/livengine/livnet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/c++/livengine/livnet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -306,11 +295,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\music\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\c++\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/music/livengine/livnet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/c++/livengine/livnet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/music/livengine -BD:/music/livengine/cmake-build --check-stamp-file D:/music/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/c++/livengine -BE:/c++/livengine/cmake-build --check-stamp-file E:/c++/livengine/cmake-build/livnet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -319,23 +308,22 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\music\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\c++\livengine\cmake-build\livnet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\music\livengine\livnet\liv-main.c" />
+    <ClCompile Include="E:\c++\livengine\livnet\liv-main.c" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\music\livengine\cmake-build\ZERO_CHECK.vcxproj">
-      <Project>{9603400E-807B-3781-B967-1F32574E84A9}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{A1072C71-2EE6-33FA-AFD9-EDCCFDC99BF3}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\music\livengine\cmake-build\3rd\SDL\SDL3-shared.vcxproj">
-      <Project>{A610F9C6-A711-3CDA-9A0E-80D5719C9D17}</Project>
+    <ProjectReference Include="E:\c++\livengine\cmake-build\3rd\SDL\SDL3-shared.vcxproj">
+      <Project>{7D864591-2B9B-3880-A494-12A58BFF8DD2}</Project>
       <Name>SDL3-shared</Name>
     </ProjectReference>
   </ItemGroup>
