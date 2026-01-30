@@ -1,0 +1,24 @@
+{
+        "files.associations": {
+                "lualib.h": "c",
+                "string.h": "c",
+                "lauxlib.h": "c",
+                "liv-collision.h": "c",
+                "liv-mathf.h": "c",
+                "math.h": "c",
+                "luaclib.h": "c",
+                "sdl_video.h": "c",
+                "lapi.h": "c",
+                "stb_truetype.h": "c",
+                "stb_image.h": "c",
+                "liv-collision2df.h": "c",
+                "stdio.h": "c",
+                "sdl.h": "c",
+                "miniaudio.h": "c",
+                "dr_flac.h": "c",
+                "dr_wav.h": "c",
+                "dr_mp3.h": "c",
+                "sdl_audio.h": "c"
+        },
+        "dotnet.preferCSharpExtension": true
+}

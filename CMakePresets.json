@@ -1,0 +1,35 @@
+{
+    "version": 4,
+    "configurePresets": [
+        {
+            "name": "default",
+            "binaryDir": "${sourceDir}/cmake-build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "install",
+                "TL_ENABLE_PROFILE": true
+            }
+        },
+        {
+            "name": "CI-Windows",
+            "binaryDir": "${sourceDir}/cmake-build",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_VERSION": "10.0.26100.0"
+            }
+        },
+        {
+            "name": "CI-Linux",
+            "binaryDir": "${sourceDir}/cmake-build",
+            "generator": "Ninja"
+        },
+        {
+            "name": "CI-Emscripten",
+            "binaryDir": "${sourceDir}/emcmake-build",
+            "generator": "Ninja"
+        },
+        {
+            "name": "CI-Android",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/android-build"
+        }
+    ]
+}
