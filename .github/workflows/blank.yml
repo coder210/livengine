@@ -1,0 +1,216 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build-cmake:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+            - name: Windows
+              os: windows-latest
+            - name: Ubuntu
+              os: ubuntu-22.04
+            - name: MacOS
+              os: macOS-latest
+            - name: Android
+              os: ubuntu-22.04
+            - name: Emscripten (Web)
+              os: ubuntu-22.04
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Prepare cmake
+      uses: lukka/get-cmake@latest
+
+    # 修改条件判断：根据 matrix.name 来区分不同的任务类型
+    - name: Prepare Ubuntu OS
+      if: matrix.name == 'Ubuntu' || matrix.name == 'Android' || matrix.name == 'Emscripten (Web)' 
+      run: |
+        sudo apt update -y
+        sudo apt install build-essential make pkg-config gnome-desktop-testing libasound2-dev libpulse-dev libaudio-dev libjack-dev libsndio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxfixes-dev libxi-dev libxss-dev libxkbcommon-dev libdrm-dev libgbm-dev libgl1-mesa-dev libgles2-mesa-dev libegl1-mesa-dev libdbus-1-dev libibus-1.0-dev libudev-dev fcitx-libs-dev libpipewire-0.3-dev libwayland-dev libdecor-0-dev liburing-dev -y
+
+    - name: Prepare Emscripten
+      if: matrix.name == 'Emscripten (Web)'
+      run: |
+        sudo apt update -y
+        sudo apt install -y python3 python3-pip ninja-build
+        # 安装emsdk
+        git clone https://github.com/emscripten-core/emsdk.git
+        cd emsdk
+        ./emsdk install latest
+        ./emsdk activate latest
+        echo "EMSDK=$(pwd)" >> $GITHUB_ENV
+        echo "PATH=$(pwd)/upstream/emscripten:$(pwd):$PATH" >> $GITHUB_ENV
+
+    - name: Prepare MacOS
+      if: matrix.name == 'MacOS'
+      run: |
+        brew install ninja
+
+    - name: Config cmake (Ubuntu & MacOS)
+      if: matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
+      working-directory: ./
+      run: |
+        ${{ matrix.cmake-path }}cmake --preset=CI-Linux
+
+    - name: Config cmake (Windows)
+      if: matrix.name == 'Windows'
+      working-directory: ./
+      run: |
+        ${{ matrix.cmake-path }}cmake --preset=CI-Windows
+
+    - name: Config cmake (Emscripten)
+      if: matrix.name == 'Emscripten (Web)'
+      working-directory: ./
+      run: |
+        source $EMSDK/emsdk_env.sh
+        ${{ matrix.cmake-path }}cmake --preset=CI-Emscripten
+
+    - name: Debug Windows
+      if: matrix.name == 'Windows'
+      working-directory: ./
+      run: |
+        echo "=== Windows 工作目录 ==="
+        pwd
+        ls
+
+    - name: Debug Ubuntu/Mac
+      working-directory: ./
+      if: matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
+      run: |
+        echo "=== Linux/Mac 工作目录 ==="
+        pwd
+        echo "=== 1 ==="
+        ls -la
+        echo "=== 2 ==="
+        ls -la cmake-build/ 2>/dev/null || echo "cmake-build 不存在"
+        echo "=== 3 ==="
+        ls -la ./cmake-build/bin
+
+    - name: Debug Emscripten
+      working-directory: ./
+      if: matrix.name == 'Emscripten (Web)'
+      run: |
+        echo "=== Emscripten 工作目录 ==="
+        pwd
+        ls -la
+        echo "=== emcmake-build 目录 ==="
+        ls -la emcmake-build/ 2>/dev/null || echo "emcmake-build 目录不存在"
+
+    - name: Debug Android
+      working-directory: ./
+      if: matrix.name == 'Android'
+      run: |
+        echo "=== Android 工作目录 ==="
+        pwd
+        ls -la
+        echo "=== android 目录 ==="
+        ls -la android/ 2>/dev/null || echo "android 目录不存在"
+
+    - name: Build under PC
+      if: matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
+      working-directory: ./
+      run: ${{ matrix.cmake-path }}cmake --build cmake-build
+
+    - name: Build under Emscripten
+      if: matrix.name == 'Emscripten (Web)'
+      working-directory: ./
+      run: |
+        source $EMSDK/emsdk_env.sh
+        ${{ matrix.cmake-path }}cmake --build emcmake-build
+
+    - name: Upload build logs on failure (PC)
+      if: ${{ failure() && (matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS') }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-logs-${{ matrix.name }}-${{ github.run_id }}
+        path: |
+          cmake-build/CMakeFiles/**/*.log
+          cmake-build/CMakeCache.txt
+
+    - name: Upload Emscripten build logs on failure
+      if: ${{ failure() && matrix.name == 'Emscripten (Web)' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-logs-emscripten-${{ github.run_id }}
+        path: |
+          emcmake-build/CMakeFiles/**/*.log
+          emcmake-build/CMakeCache.txt
+
+    - name: Debug Ubuntu/Mac After
+      if: matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
+      run: |
+        echo "=== Linux/Mac 生成目录 ==="
+        ls -la ./cmake-build/bin
+        
+    # 添加PC平台上传步骤
+    - name: Upload PC artifact
+      if: matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
+      uses: actions/upload-artifact@v4
+      with:
+        name: livnet-${{ matrix.name }}-${{ github.run_id }}
+        path: |
+          ./cmake-build/bin
+        retention-days: 7
+
+    # 添加Emscripten上传步骤
+    - name: Upload Emscripten artifact
+      if: matrix.name == 'Emscripten (Web)'
+      uses: actions/upload-artifact@v4
+      with:
+        name: livnet-Emscripten-${{ github.run_id }}
+        path: |
+          ./emcmake-build/bin
+        retention-days: 7
+
+    - name: Precompile schema parser
+      if: runner.os == 'Linux' && matrix.name == '2Android2'
+      working-directory: ./
+      run: |
+        ${{ matrix.cmake-path }}cmake --preset=default
+        ${{ matrix.cmake-path }}cmake --build cmake-build --target schema_parser
+        ${{ matrix.cmake-path }}cmake --build cmake-build --target run_schema_parser
+
+    - name: Prepare Android JDK
+      if: matrix.name == 'Android'
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'adopt'
+
+    - name: Setup Android SDK
+      if: matrix.name == 'Android'
+      uses: android-actions/setup-android@v3
+
+    - name: Prepare Android Project
+      if: matrix.name == 'Android'
+      run: |
+        sudo apt update -y
+        sudo apt install cmake ninja-build -y
+        yes | sdkmanager --licenses
+        cp -r ./3rd/SDL/ ./android/app/jni/SDL/
+        cp -r ./livnet ./android/app/jni/src/
+        cp -r ./assets android/app/src/main/assets/
+        chmod +x ./android/gradlew
+
+    - name: Build under Android
+      if: matrix.name == 'Android'
+      working-directory: ./android
+      run: |
+        ninja --version
+        ./gradlew build
+
+    # 添加Android上传步骤
+    - name: Upload Android artifact
+      if: matrix.name == 'Android'
+      uses: actions/upload-artifact@v4
+      with:
+        name: livnet-android-${{ github.run_id }}
+        path: |
+          ./android/app/build/outputs/apk/debug/
+          ./android/app/build/outputs/bundle/debug/
+        retention-days: 7
