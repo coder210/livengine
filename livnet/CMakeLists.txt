@@ -12,7 +12,7 @@ if(ANDROID)
     include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../SDL/include)
 else()
     # 非Android环境
-    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rd/SDL/include)
+    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../3rd/SDL/include)
 endif()
 
 #set(LUA_FILES "external/lua/*.h" "external/lua/*.c") 
