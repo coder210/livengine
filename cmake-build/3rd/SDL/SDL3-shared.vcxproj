@@ -87,7 +87,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "E:/c++/livengine/3rd/SDL/src/video/khronos" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -109,10 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;SDL_BUILD_MAJOR_VERSION=3;SDL_BUILD_MINOR_VERSION=2;SDL_BUILD_MICRO_VERSION=6;CMAKE_INTDIR=\"Debug\";DLL_EXPORT</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -135,7 +135,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "E:/c++/livengine/3rd/SDL/src/video/khronos" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>
@@ -157,10 +157,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;SDL_BUILD_MAJOR_VERSION=3;SDL_BUILD_MINOR_VERSION=2;SDL_BUILD_MICRO_VERSION=6;CMAKE_INTDIR=\"Release\";DLL_EXPORT</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "E:/c++/livengine/3rd/SDL/src/video/khronos" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>
@@ -205,10 +205,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;SDL_BUILD_MAJOR_VERSION=3;SDL_BUILD_MINOR_VERSION=2;SDL_BUILD_MICRO_VERSION=6;CMAKE_INTDIR=\"MinSizeRel\";DLL_EXPORT</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -231,7 +231,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "E:/c++/livengine/3rd/SDL/src/video/khronos" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -252,10 +252,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;SDL_BUILD_MAJOR_VERSION=3;SDL_BUILD_MINOR_VERSION=2;SDL_BUILD_MICRO_VERSION=6;CMAKE_INTDIR=\"RelWithDebInfo\";DLL_EXPORT</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

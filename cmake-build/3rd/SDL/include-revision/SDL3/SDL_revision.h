@@ -31,9 +31,9 @@
 /* #undef SDL_VENDOR_INFO */
 
 #ifdef SDL_VENDOR_INFO
-#define SDL_REVISION "SDL3-3.2.6-2a43770 (" SDL_VENDOR_INFO ")"
+#define SDL_REVISION "SDL3-3.2.6-fb8030b (" SDL_VENDOR_INFO ")"
 #else
-#define SDL_REVISION "SDL3-3.2.6-2a43770"
+#define SDL_REVISION "SDL3-3.2.6-fb8030b"
 #endif
 
 #endif /* SDL_revision_h_ */

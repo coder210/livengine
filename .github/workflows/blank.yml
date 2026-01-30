@@ -16,7 +16,7 @@ jobs:
               os: macOS-latest
             - name: Android
               os: ubuntu-22.04
-            - name: Emscripten (Web)
+            - name: Emscripten
               os: ubuntu-22.04
     name: ${{ matrix.name }}
     runs-on: ${{ matrix.os }}
@@ -28,13 +28,13 @@ jobs:
 
     # 修改条件判断：根据 matrix.name 来区分不同的任务类型
     - name: Prepare Ubuntu OS
-      if: matrix.name == 'Ubuntu' || matrix.name == 'Android' || matrix.name == 'Emscripten (Web)' 
+      if: matrix.name == 'Ubuntu' || matrix.name == 'Android' || matrix.name == 'Emscripten' 
       run: |
         sudo apt update -y
         sudo apt install build-essential make pkg-config gnome-desktop-testing libasound2-dev libpulse-dev libaudio-dev libjack-dev libsndio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxfixes-dev libxi-dev libxss-dev libxkbcommon-dev libdrm-dev libgbm-dev libgl1-mesa-dev libgles2-mesa-dev libegl1-mesa-dev libdbus-1-dev libibus-1.0-dev libudev-dev fcitx-libs-dev libpipewire-0.3-dev libwayland-dev libdecor-0-dev liburing-dev -y
 
     - name: Prepare Emscripten
-      if: matrix.name == 'Emscripten (Web)'
+      if: matrix.name == 'Emscripten'
       run: |
         sudo apt update -y
         sudo apt install -y python3 python3-pip ninja-build
@@ -64,7 +64,7 @@ jobs:
         ${{ matrix.cmake-path }}cmake --preset=CI-Windows
 
     - name: Config cmake (Emscripten)
-      if: matrix.name == 'Emscripten (Web)'
+      if: matrix.name == 'Emscripten'
       working-directory: ./
       run: |
         source $EMSDK/emsdk_env.sh
@@ -93,7 +93,7 @@ jobs:
 
     - name: Debug Emscripten
       working-directory: ./
-      if: matrix.name == 'Emscripten (Web)'
+      if: matrix.name == 'Emscripten'
       run: |
         echo "=== Emscripten 工作目录 ==="
         pwd
@@ -117,7 +117,7 @@ jobs:
       run: ${{ matrix.cmake-path }}cmake --build cmake-build
 
     - name: Build under Emscripten
-      if: matrix.name == 'Emscripten (Web)'
+      if: matrix.name == 'Emscripten'
       working-directory: ./
       run: |
         source $EMSDK/emsdk_env.sh
@@ -133,7 +133,7 @@ jobs:
           cmake-build/CMakeCache.txt
 
     - name: Upload Emscripten build logs on failure
-      if: ${{ failure() && matrix.name == 'Emscripten (Web)' }}
+      if: ${{ failure() && matrix.name == 'Emscripten' }}
       uses: actions/upload-artifact@v4
       with:
         name: build-logs-emscripten-${{ github.run_id }}
@@ -159,10 +159,10 @@ jobs:
 
     # 添加Emscripten上传步骤
     - name: Upload Emscripten artifact
-      if: matrix.name == 'Emscripten (Web)'
+      if: matrix.name == 'Emscripten'
       uses: actions/upload-artifact@v4
       with:
-        name: livnet-Emscripten-${{ github.run_id }}
+        name: livnet-${{ matrix.name }}-${{ github.run_id }}
         path: |
           ./emcmake-build/bin
         retention-days: 7

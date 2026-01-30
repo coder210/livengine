@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>
@@ -132,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-release\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-minsizerel\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_GENERATED_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-relwithdebinfo\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

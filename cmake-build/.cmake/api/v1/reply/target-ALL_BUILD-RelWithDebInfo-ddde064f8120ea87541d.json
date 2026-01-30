@@ -1,0 +1,39 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"3rd/SDL/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "SDL3-shared::@390882f457bfc01a1809"
+		},
+		{
+			"id" : "SDL_uclibc::@390882f457bfc01a1809"
+		}
+	],
+	"id" : "ALL_BUILD::@390882f457bfc01a1809",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "3rd/SDL",
+		"source" : "3rd/SDL"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
