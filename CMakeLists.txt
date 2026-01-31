@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(PROJECT_NAME livnet)
+set(PROJECT_NAME livengine)
 
 project(${PROJECT_NAME} LANGUAGES C VERSION "3.2.6")
 

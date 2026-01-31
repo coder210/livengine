@@ -81,6 +81,7 @@
       <AdditionalIncludeDirectories>E:\c++\livengine\build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\3rd\SDL\src;E:\c++\livengine\3rd\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>

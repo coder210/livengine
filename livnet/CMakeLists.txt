@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(PROJECT_NAME livnet)
+set(LIVNET_PROJECT_NAME livnet)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_EXTENSIONS OFF)
@@ -21,11 +21,11 @@ endif()
 #file(GLOB PROJECT_FILES "external/*.h" "external/*.c" ${LUA_FILES} ${MUJS_FILES} ${KLIB_FILES} "*.h" "*.c")
 file(GLOB PROJECT_FILES "liv-main.c")
 
-add_executable(${PROJECT_NAME} ${PROJECT_FILES})
+add_executable(${LIVNET_PROJECT_NAME} ${PROJECT_FILES})
 
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-	target_link_libraries(${PROJECT_NAME} PRIVATE SDL3-shared -lm)	
+	target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared -lm)	
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
  	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
  	add_definitions(-D_WINSOCK_DEPRECATED_NO_WARNINGS)
@@ -34,9 +34,9 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
 		message("enable classic mono")
 		add_definitions(-DLIVNET_CLASSIC_MONO)
 		# libmono-static-sgen.lib winmm.lib ws2_32.lib Version.lib Bcrypt.lib
-		target_link_libraries(${PROJECT_NAME} PRIVATE SDL3-shared libmono-static-sgen ws2_32 Bcrypt Winmm setupapi Imm32 Version)
+		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared libmono-static-sgen ws2_32 Bcrypt Winmm setupapi Imm32 Version)
 	else()
-		target_link_libraries(${PROJECT_NAME} PRIVATE SDL3-shared ws2_32 Bcrypt Winmm setupapi Imm32 Version)
+		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared ws2_32 Bcrypt Winmm setupapi Imm32 Version)
 	endif()
 	elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin")  # macOS ��֧
     message("current Platform: macOS")
@@ -53,7 +53,7 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
     find_library(CARBON_LIBRARY Carbon)
     
     # ���� macOS ���
-    target_link_libraries(${PROJECT_NAME} PRIVATE
+    target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE
         SDL3-shared
         ${COCOA_LIBRARY}
         ${METAL_LIBRARY}
@@ -73,14 +73,14 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
         # �� macOS ������ mono �⣬��Ҫ������� mono ��װ·������
         find_library(MONO_LIBRARY mono-2.0)
         if(MONO_LIBRARY)
-            target_link_libraries(${PROJECT_NAME} PRIVATE ${MONO_LIBRARY})
+            target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE ${MONO_LIBRARY})
         else()
             message(WARNING "Mono library not found on macOS")
         endif()
     endif()
     
     # ���� macOS Ŀ������
-    set_target_properties(${PROJECT_NAME} PROPERTIES
+    set_target_properties(${LIVNET_PROJECT_NAME} PROPERTIES
         MACOSX_RPATH ON
         BUILD_WITH_INSTALL_RPATH TRUE
         INSTALL_RPATH "@executable_path"
