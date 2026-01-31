@@ -146,7 +146,7 @@ jobs:
         emcc --version || echo "emcc 不可用"
         # 使用 emmake 进行构建
         cd emcmake-build
-        emmake ${{ matrix.cmake-path }}cmake --build . --parallel
+        emmake ${{ matrix.cmake-path }}cmake --build . --parallel -- -j$(nproc) livnet
         # 检查生成的文件
         echo "=== 生成的 Web 文件 ==="
         ls -la bin/*.html 2>/dev/null || ls -la bin/*.js 2>/dev/null || ls -la bin/*.wasm 2>/dev/null || echo "未找到 Web 文件"
