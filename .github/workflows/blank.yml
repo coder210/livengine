@@ -162,6 +162,15 @@ jobs:
         echo "=== 检查 SDL 构建目录 ==="
         ls -la emcmake-build/3rd/SDL/CMakeFiles/ 2>/dev/null || echo "SDL 构建目录不存在"
 
+        echo "=== Emscripten 工作目录 ==="
+        pwd
+        ls -la
+        echo "=== emcmake-build 目录 ==="
+        ls -la emcmake-build/ 2>/dev/null || echo "emcmake-build 目录不存在"
+        echo "=== 检查 Emscripten 工具链 ==="
+        which emcc || echo "emcc not found"
+        which emcmake || echo "emcmake not found"
+
     - name: Upload build logs on failure (PC)
       if: ${{ failure() && (matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS') }}
       uses: actions/upload-artifact@v4
