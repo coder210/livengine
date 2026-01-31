@@ -24,7 +24,7 @@ if(EMSCRIPTEN)
     message(STATUS "Building for Emscripten with SDL3")
     # Emscripten需要特殊的链接选项
     target_link_options(${LIVNET_PROJECT_NAME} PRIVATE
-        -sUSE_SDL=2
+        -sUSE_SDL=3
         -sALLOW_MEMORY_GROWTH=1
         -sMAX_WEBGL_VERSION=2
         -sMIN_WEBGL_VERSION=2

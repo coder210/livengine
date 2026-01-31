@@ -161,22 +161,30 @@ jobs:
         
         cd emcmake-build
         
-        # 方法1: 使用并行构建但控制顺序（先构建SDL3-static）
-        echo "=== 方法1: 先构建SDL3-static库 ==="
-        emmake ${{ matrix.cmake-path }}cmake --build . --target SDL3-static
+        # 先列出所有可用的目标，以便调试
+        echo "=== 可用CMake目标 ==="
+        ${{ matrix.cmake-path }}cmake --build . --target help 2>/dev/null | grep -E "SDL|livnet" || true
         
-        echo "=== 方法2: 然后构建主目标（单线程）==="
-        emmake ${{ matrix.cmake-path }}cmake --build . --target livnet -- -j1
+        # 方法1: 直接构建所有目标（单线程避免并行问题）
+        echo "=== 构建所有目标（单线程）==="
+        emmake ${{ matrix.cmake-path }}cmake --build . -- -j1
         
-        # 或者方法3: 如果需要构建所有目标，使用单线程
-        # emmake ${{ matrix.cmake-path }}cmake --build . -- -j1
+        # 方法2: 如果方法1失败，尝试分别构建
+        # echo "=== 先构建SDL3目标 ==="
+        # 首先尝试找到正确的SDL目标名
+        # if ${{ matrix.cmake-path }}cmake --build . --target SDL3-static 2>/dev/null; then
+        #     echo "构建 SDL3-static 成功"
+        # elif ${{ matrix.cmake-path }}cmake --build . --target SDL3 2>/dev/null; then
+        #     echo "构建 SDL3 成功"
+        # else
+        #     echo "无法找到SDL目标"
+        # fi
+        # echo "=== 再构建livnet ==="
+        # emmake ${{ matrix.cmake-path }}cmake --build . --target livnet -- -j1
         
         # 检查生成的文件
         echo "=== 生成的 Web 文件 ==="
-        ls -la bin/*.html 2>/dev/null || echo "未找到HTML文件"
-        ls -la bin/*.js 2>/dev/null || echo "未找到JS文件"
-        ls -la bin/*.wasm 2>/dev/null || echo "未找到WASM文件"
-        ls -la bin/*.data 2>/dev/null || echo "未找到数据文件"
+        find bin/ -name "*.html" -o -name "*.js" -o -name "*.wasm" -o -name "*.data" 2>/dev/null || echo "未找到Web文件"
         
         echo "=== 检查bin目录 ==="
         ls -la bin/
