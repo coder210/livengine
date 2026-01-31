@@ -26,7 +26,7 @@ add_executable(${LIVNET_PROJECT_NAME} ${PROJECT_FILES})
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
 	if(EMSCRIPTEN)
-		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-static -lm)	
+		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE ./bin/SDL3-static -lm)	
     else()
 		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared -lm)	
 	endif()
