@@ -1,5 +1,5 @@
-#ifndef LIV_HASH
-#define LIV_HASH
+#ifndef LIV_HASH_H
+#define LIV_HASH_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -98,5 +98,5 @@ static unsigned long kr_hash(const char* str, int size)
         return hash % size;
 }
 
-#endif // !LIV_HASH
+#endif // !LIV_HASH_H
 

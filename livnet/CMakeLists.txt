@@ -15,11 +15,11 @@ else()
     include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../3rd/SDL/include)
 endif()
 
-#set(LUA_FILES "external/lua/*.h" "external/lua/*.c") 
-#set(MUJS_FILES "external/mujs/*.h" "external/mujs/*.c") 
-#set(KLIB_FILES "external/klib/*.h" "external/klib/*.c") 
-#file(GLOB PROJECT_FILES "external/*.h" "external/*.c" ${LUA_FILES} ${MUJS_FILES} ${KLIB_FILES} "*.h" "*.c")
-file(GLOB PROJECT_FILES "liv-main.c")
+set(LUA_FILES "external/lua/*.h" "external/lua/*.c") 
+set(MUJS_FILES "external/mujs/*.h" "external/mujs/*.c") 
+set(KLIB_FILES "external/klib/*.h" "external/klib/*.c") 
+file(GLOB PROJECT_FILES "external/*.h" "external/*.c" ${LUA_FILES} ${MUJS_FILES} ${KLIB_FILES} "*.h" "*.c")
+#file(GLOB PROJECT_FILES "liv-main.c")
 
 add_executable(${LIVNET_PROJECT_NAME} ${PROJECT_FILES})
 
