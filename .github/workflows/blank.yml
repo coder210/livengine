@@ -43,10 +43,9 @@ jobs:
         cd emsdk
         ./emsdk install latest
         ./emsdk activate latest
-        source ./emsdk_env.sh
-        echo "EMSDK=$(pwd)" >> $GITHUB_ENV
-        echo "PATH=$(pwd)/upstream/emscripten:$(pwd):$PATH" >> $GITHUB_ENV
-        # 设置 Emscripten 环境变量
+        # 将环境变量添加到GITHUB_ENV
+        echo "EMSDK_PATH=$(pwd)" >> $GITHUB_ENV
+        echo "EMSDK_NODE=$(pwd)/node/$(ls node)/bin" >> $GITHUB_ENV
         echo "EMSCRIPTEN=$(pwd)/upstream/emscripten" >> $GITHUB_ENV
 
     - name: Prepare MacOS
@@ -69,20 +68,32 @@ jobs:
     - name: Config cmake (Emscripten)
       if: matrix.name == 'Emscripten'
       working-directory: ./
-      env:
-        EMSDK: ${{ env.EMSDK }}
       run: |
-        source $EMSDK/emsdk_env.sh
+        # 设置 Emscripten 环境
+        source ${{ env.EMSDK_PATH }}/emsdk_env.sh
+        
+        echo "=== 配置 Emscripten CMake ==="
+        echo "EMSDK_PATH: ${{ env.EMSDK_PATH }}"
+        echo "EMSCRIPTEN: ${{ env.EMSCRIPTEN }}"
+        
         # 创建 Emscripten 构建目录并配置
         mkdir -p emcmake-build
         cd emcmake-build
+        
+        # 使用emcmake配置CMake
         emcmake ${{ matrix.cmake-path }}cmake .. \
           -DCMAKE_BUILD_TYPE=Release \
           -DCMAKE_EXECUTABLE_SUFFIX=.html \
-          -DCMAKE_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake
+          -DCMAKE_INSTALL_PREFIX=./bin \
+          -DCMAKE_TOOLCHAIN_FILE=${{ env.EMSDK_PATH }}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+          -DSDL3_STATIC=ON \
+          -DSDL3_SHARED=OFF
+        
         # 检查生成的 CMakeCache 是否正确设置了 Emscripten
         echo "=== 检查 CMakeCache ==="
         grep -i "emscripten" CMakeCache.txt || true
+        echo "=== 检查工具链文件 ==="
+        grep -i "toolchain" CMakeCache.txt || true
 
     - name: Debug Windows
       if: matrix.name == 'Windows'
@@ -117,6 +128,9 @@ jobs:
         echo "=== 检查 Emscripten 工具链 ==="
         which emcc || echo "emcc not found"
         which emcmake || echo "emcmake not found"
+        echo "=== 检查环境变量 ==="
+        echo "EMSDK_PATH: ${{ env.EMSDK_PATH }}"
+        echo "EMSCRIPTEN: ${{ env.EMSCRIPTEN }}"
 
     - name: Debug Android
       working-directory: ./
@@ -136,20 +150,36 @@ jobs:
     - name: Build under Emscripten
       if: matrix.name == 'Emscripten'
       working-directory: ./
-      env:
-        EMSDK: ${{ env.EMSDK }}
       run: |
-        source $EMSDK/emsdk_env.sh
+        # 设置 Emscripten 环境
+        source ${{ env.EMSDK_PATH }}/emsdk_env.sh
+        
         echo "=== 使用 Emscripten 编译 ==="
-        echo "EMSDK 路径: $EMSDK"
+        echo "EMSDK 路径: ${{ env.EMSDK_PATH }}"
         echo "emcc 版本:"
         emcc --version || echo "emcc 不可用"
-        # 使用 emmake 进行构建
+        
         cd emcmake-build
-        emmake ${{ matrix.cmake-path }}cmake --build . --parallel -- -j$(nproc) livnet
+        
+        # 方法1: 使用并行构建但控制顺序（先构建SDL3-static）
+        echo "=== 方法1: 先构建SDL3-static库 ==="
+        emmake ${{ matrix.cmake-path }}cmake --build . --target SDL3-static
+        
+        echo "=== 方法2: 然后构建主目标（单线程）==="
+        emmake ${{ matrix.cmake-path }}cmake --build . --target livnet -- -j1
+        
+        # 或者方法3: 如果需要构建所有目标，使用单线程
+        # emmake ${{ matrix.cmake-path }}cmake --build . -- -j1
+        
         # 检查生成的文件
         echo "=== 生成的 Web 文件 ==="
-        ls -la bin/*.html 2>/dev/null || ls -la bin/*.js 2>/dev/null || ls -la bin/*.wasm 2>/dev/null || echo "未找到 Web 文件"
+        ls -la bin/*.html 2>/dev/null || echo "未找到HTML文件"
+        ls -la bin/*.js 2>/dev/null || echo "未找到JS文件"
+        ls -la bin/*.wasm 2>/dev/null || echo "未找到WASM文件"
+        ls -la bin/*.data 2>/dev/null || echo "未找到数据文件"
+        
+        echo "=== 检查bin目录 ==="
+        ls -la bin/
 
     - name: Debug SDL3 Library Location (Emscripten)
       if: ${{ failure() && (matrix.name == 'Emscripten')}}
@@ -157,7 +187,7 @@ jobs:
       run: |
         echo "=== 查找 SDL3 库文件 ==="
         find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i sdl || echo "未找到 SDL 库文件"
-        find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i livnet || echo "未找到 SDL 库文件"
+        find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i livnet || echo "未找到 livnet 库文件"
 
         echo "=== 检查 emcmake-build 目录 ==="
         ls -la emcmake-build/bin/ 2>/dev/null || echo "emcmake-build/bin 不存在"
@@ -190,6 +220,7 @@ jobs:
         path: |
           emcmake-build/CMakeFiles/**/*.log
           emcmake-build/CMakeCache.txt
+          emcmake-build/build.ninja
 
     - name: Debug Ubuntu/Mac After
       if: matrix.name == 'Ubuntu' || matrix.name == 'MacOS'
@@ -218,6 +249,7 @@ jobs:
           ./emcmake-build/bin/*.js
           ./emcmake-build/bin/*.wasm
           ./emcmake-build/bin/*.data
+          ./emcmake-build/bin/*.a
         retention-days: 7
 
     - name: Precompile schema parser
