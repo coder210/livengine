@@ -90,7 +90,6 @@
       <AdditionalIncludeDirectories>E:\c++\livengine\cmake-build\3rd\SDL\include-config-debug\build_config;E:\c++\livengine\cmake-build\3rd\SDL\include-revision;E:\c++\livengine\3rd\SDL\include;E:\c++\livengine\3rd\SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "E:/c++/livengine/3rd/SDL/src/video/khronos" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>

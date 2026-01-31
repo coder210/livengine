@@ -25,7 +25,11 @@ add_executable(${LIVNET_PROJECT_NAME} ${PROJECT_FILES})
 
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-	target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared -lm)	
+	if(EMSCRIPTEN)
+		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-static -lm)	
+    else()
+		target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE SDL3-shared -lm)	
+	endif()
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
  	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
  	add_definitions(-D_WINSOCK_DEPRECATED_NO_WARNINGS)
@@ -66,11 +70,9 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
         ${CARBON_LIBRARY}
     )
     
-    # �����Ҫ mono ֧��
     if(ENABLE_LIVNET_CLASSIC_MONO)
         message("enable classic mono for macOS")
         add_definitions(-DLIVNET_CLASSIC_MONO)
-        # �� macOS ������ mono �⣬��Ҫ������� mono ��װ·������
         find_library(MONO_LIBRARY mono-2.0)
         if(MONO_LIBRARY)
             target_link_libraries(${LIVNET_PROJECT_NAME} PRIVATE ${MONO_LIBRARY})
@@ -79,7 +81,6 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
         endif()
     endif()
     
-    # ���� macOS Ŀ������
     set_target_properties(${LIVNET_PROJECT_NAME} PROPERTIES
         MACOSX_RPATH ON
         BUILD_WITH_INSTALL_RPATH TRUE
