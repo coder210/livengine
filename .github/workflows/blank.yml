@@ -152,7 +152,7 @@ jobs:
         ls -la bin/*.html 2>/dev/null || ls -la bin/*.js 2>/dev/null || ls -la bin/*.wasm 2>/dev/null || echo "未找到 Web 文件"
 
     - name: Debug SDL3 Library Location (Emscripten)
-      if: ${{ failure() && (matrix.name == 'Emscripten'}}
+      if: ${{ failure() && (matrix.name == 'Emscripten')}}
       working-directory: ./
       run: |
         echo "=== 查找 SDL3 库文件 ==="
