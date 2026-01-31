@@ -145,10 +145,22 @@ jobs:
         echo "emcc 版本:"
         emcc --version || echo "emcc 不可用"
         # 使用 emmake 进行构建
+        cd emcmake-build
         emmake ${{ matrix.cmake-path }}cmake --build . --parallel
         # 检查生成的文件
         echo "=== 生成的 Web 文件 ==="
         ls -la bin/*.html 2>/dev/null || ls -la bin/*.js 2>/dev/null || ls -la bin/*.wasm 2>/dev/null || echo "未找到 Web 文件"
+
+    - name: Debug SDL3 Library Location (Emscripten)
+      if: matrix.name == 'Emscripten'
+      working-directory: ./
+      run: |
+        echo "=== 查找 SDL3 库文件 ==="
+        find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i sdl || echo "未找到 SDL 库文件"
+        echo "=== 检查 emcmake-build 目录 ==="
+        ls -la emcmake-build/bin/ 2>/dev/null || echo "emcmake-build/bin 不存在"
+        echo "=== 检查 SDL 构建目录 ==="
+        ls -la emcmake-build/3rd/SDL/CMakeFiles/ 2>/dev/null || echo "SDL 构建目录不存在"
 
     - name: Upload build logs on failure (PC)
       if: ${{ failure() && (matrix.name == 'Windows' || matrix.name == 'Ubuntu' || matrix.name == 'MacOS') }}
