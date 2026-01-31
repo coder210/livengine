@@ -157,6 +157,8 @@ jobs:
       run: |
         echo "=== 查找 SDL3 库文件 ==="
         find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i sdl || echo "未找到 SDL 库文件"
+        find . -name "*.a" -o -name "*.so" -o -name "*.wasm" | grep -i livnet || echo "未找到 SDL 库文件"
+
         echo "=== 检查 emcmake-build 目录 ==="
         ls -la emcmake-build/bin/ 2>/dev/null || echo "emcmake-build/bin 不存在"
         echo "=== 检查 SDL 构建目录 ==="
